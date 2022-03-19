@@ -1,0 +1,16 @@
+.step {
+  margin: 10px 10px;
+}
+
+.step-title {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.step-text {
+  width: 100%;
+  text-align: start;
+  font-size: 12px;
+}

@@ -1,23 +1,38 @@
 .banner {
-    width: 100%;
-    min-height: 50px;
-    height: inherit;
-    position: relative;
+  width: 100%;
+  min-height: 50px;
+  height: inherit;
+  position: relative;
 }
 
 .banner-img {
-    width: 100%;
+  width: 100%;
 }
 
 .banner-text {
-    position: absolute;
-    color: rgb(var(--white));
-    font-size: 60px;
-    font-weight: bold;
-    top: 20%;
-    left: 38%;
+  position: absolute;
+  color: rgb(var(--white));
+  font-size: 60px;
+  font-weight: bold;
+  top: 20%;
+  left: 38%;
 }
 
 .banner-currency {
-    color: #85bb65;
+  color: #85bb65;
+}
+
+.banner-info {
+  background-color: inherit;
+  border:none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }

@@ -1,0 +1,18 @@
+{
+    "title":"Main conditions",
+    "subtitle":"Ticket price - 10 KES",
+    "steps":[
+        {
+            "title":"How does it work?",
+            "text":"There is a list of 12 games, plus reserve 5 games from different leagues and championships. You must predict the outcome of all 12 games by selecting one of offering outcomes 1, X or 2 (Home team win, draw or away team will win) also you must predict the outcomes of 5 reserved games, any case one of 12 games is cancelled first of reserved game will change that game, so on up to 5 games."
+        },
+        {
+            "title":"How can I win?",
+            "text":"You are Jackpot winner if all your 12 predicted games are correct! Also you can win huge money in case of 11, 10 or 9 correct predictions. In the event that there are no Jackpot winners(12 right predicted games) the payout will be kept and will be added to the next draw. Jackpot’s money is being increased during each draw until someone wins the Jackpot. 11.10.9 winners’ money is being determined from draw’s sell out (based on participants tickets). In the event that there are more than one winner in any category, the prize will be distributed equally among the winners of that category."
+        },
+        {
+            "title":"How to bet on double combination?(lines)",
+            "text":"A double combination bet means that you can bet on single match by choosing two predictions.To bet with two predictions you can choose 2, 3 lines etc or you can just click on the second prediction for the same match. You can bet with two predictions on up to 7 matches from 17.When you bet this way, the number of combinations will increase.The number of combinations shows how many Jackpot tickets you have."
+        }
+    ]
+}
