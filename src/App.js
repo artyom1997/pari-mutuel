@@ -1,10 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import { useState } from "react";
 import Banner from "./components/banner/banner";
-import MainTab from "./components/main-tab/main-tab";
 import PopUp from "./components/popup/popup";
+import Main from "./components/main/main";
 
 function App() {
+  const [popup, setPopup] = useState(false);
+ 
+
   const bannerConf = {
     imgPath: require("./files/images/banner.jpg"),
     text: 1003194,
@@ -12,14 +15,12 @@ function App() {
   };
 
   const popupInfo = require("./files/Json/info.json");
- 
-  const [popup,setPopup] = useState(false)
- 
+
   return (
     <div className="App">
       <Banner bannerConf={bannerConf} setPopup={setPopup} />
-      <MainTab />
-     { popup ?  <PopUp setPopup={setPopup} info={popupInfo} /> : null} 
+      <Main />
+      {popup ? <PopUp setPopup={setPopup} info={popupInfo} /> : null}
     </div>
   );
 }
