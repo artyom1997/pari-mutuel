@@ -3,12 +3,13 @@
   height: 50px;
   display: flex;
   justify-content: space-around;
+  border-bottom: 1px solid  rgb(var(--ligth-green));
 }
 
 .tab {
   width: 33%;
   height: 100%;
-  background-color: #1d222c;
+  background-color: rgba(var(--ligth-green),.15);
   font-weight: 700;
   font-size: 25px;
   border-right: 3px solid #212529;

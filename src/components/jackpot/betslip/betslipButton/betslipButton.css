@@ -1,0 +1,9 @@
+.betslip-button {
+    background-color: #474c59;
+    padding: 5px 15px;
+    color: rgb(var(--white));
+    border-radius: 5px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.betslip {
+    width: 29%;
+    min-height: 500px;
+}
+
+.betslip-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c2129;
+    padding: 7px 15px;
+}
+
+.betslip-title {
+    font-size: 25px;
+    color: rgb(var(--white));
+}

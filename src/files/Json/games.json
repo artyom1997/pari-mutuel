@@ -1,43 +1,43 @@
 [
     {
-        "id":1,
-        "teams":"Brisbane Roar V Western United",
-        "league":"Australia - A-League",
-        "date":"26/03/2022",
-        "hour":"10:05",
-        "prices":[
+        "id": 1,
+        "teams": "Brisbane Roar V Western United",
+        "league": "Australia - A-League",
+        "date": "26/03/2022",
+        "hour": "10:05",
+        "prices": [
             {
-                "name":"1",
-                "rate":"2.80"
+                "name": "1",
+                "rate": "2.80"
             },
             {
-                "name":"X",
-                "rate":"3.10"
+                "name": "X",
+                "rate": "3.10"
             },
             {
-                "name":"2",
-                "rate":"2.34"
+                "name": "2",
+                "rate": "2.34"
             }
         ]
     },
     {
-        "id":2,
-        "teams":"Bradford City V Newport County",
-        "league":"England - EFL League Two",
-        "date":"26/03/2022",
-        "hour":"19:00",
-        "prices":[
+        "id": 2,
+        "teams": "Bradford City V Newport County",
+        "league": "England - EFL League Two",
+        "date": "26/03/2022",
+        "hour": "19:00",
+        "prices": [
             {
-                "name":"1",
-                "rate":"2.57"
+                "name": "1",
+                "rate": "2.57"
             },
             {
-                "name":"X",
-                "rate":"3.05"
+                "name": "X",
+                "rate": "3.05"
             },
             {
-                "name":"2",
-                "rate":"2.57"
+                "name": "2",
+                "rate": "2.57"
             }
         ]
     }

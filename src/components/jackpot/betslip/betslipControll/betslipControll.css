@@ -1,0 +1,17 @@
+.betslip-controll {
+    width: 75%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.betslip-select {
+    background-color: transparent;
+    color: rgb(var(--white));
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.betslip-select option {
+    background-color: #13161c;
+}

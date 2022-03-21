@@ -3,3 +3,8 @@
     height: 30px;
     margin-top: 40px;
 }
+
+.main-inner {
+    display: flex;
+    justify-content: space-between;
+}

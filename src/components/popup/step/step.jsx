@@ -1,7 +1,6 @@
 import "./step.css";
 import PropTypes from "prop-types";
 
-
 function Step({ info }) {
   return (
     <div className="step">
