@@ -1,4 +1,6 @@
 import "./step.css";
+import PropTypes from "prop-types";
+
 
 function Step({ info }) {
   return (
@@ -8,5 +10,16 @@ function Step({ info }) {
     </div>
   );
 }
+
+Step.propTypes = {
+  info: PropTypes.array,
+};
+
+Step.defaultProps = {
+  info: {
+    title: "",
+    subtitle: "",
+  },
+};
 
 export default Step;
