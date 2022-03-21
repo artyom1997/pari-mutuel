@@ -1,4 +1,7 @@
 import "./main-tab.css";
+import PropTypes from "prop-types";
+import React from "react";
+
 
 function MainTab({ activeTab, setActiveTab }) {
   const tabConf = [
@@ -26,4 +29,15 @@ function MainTab({ activeTab, setActiveTab }) {
   );
 }
 
-export default MainTab;
+MainTab.propTypes = {
+  activeTab: PropTypes.string,
+  setActiveTab: PropTypes.func,
+};
+
+MainTab.defaultProps = {
+  activeTab: '',
+  setActiveTab: function () {},
+};
+
+
+export default React.memo(MainTab) ;

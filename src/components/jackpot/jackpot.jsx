@@ -1,10 +1,23 @@
-import './jackpot.css'
+import PropTypes from "prop-types";
+import Item from "./item/item";
+import "./jackpot.css";
 
-
-function Jackpot (){
-    return(
-        <div>jackpot</div>
-    )
+function Jackpot({ data }) {
+  return (
+    <div className="jackpot-list">
+      {data.map((el) => {
+        return <Item info={el} key={el.id} />;
+      })}
+    </div>
+  );
 }
 
-export default Jackpot
+Jackpot.propTypes = {
+  data: PropTypes.array,
+};
+
+Jackpot.defaultProps = {
+  data: [],
+};
+
+export default Jackpot;

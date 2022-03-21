@@ -1,0 +1,21 @@
+.item-price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-button {
+    width: 98%;
+    /* height: 100%; */
+    min-height: 30px;
+    background-color: #656b73;
+    color: rgb(var(--white));
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.item-button:hover {
+    background-color: rgba(var(--ligth-green),.2);
+}

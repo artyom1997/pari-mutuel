@@ -1,0 +1,38 @@
+.item {
+    width: 100%;
+    height: 95px;
+    background-color:#252832;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.item-colums {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(var(--white));
+    width: 33%;
+
+}
+
+.item-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-index {
+    margin: 30px;
+}
+
+
+.item-league {
+    color: #72889b;
+}
+
+.item-date {
+    width: 25%;
+    color: #72889b;
+}

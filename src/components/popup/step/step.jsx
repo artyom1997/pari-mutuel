@@ -12,7 +12,7 @@ function Step({ info }) {
 }
 
 Step.propTypes = {
-  info: PropTypes.array,
+  info: PropTypes.object,
 };
 
 Step.defaultProps = {
