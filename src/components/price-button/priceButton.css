@@ -19,3 +19,7 @@
 .item-button:hover {
     background-color: rgba(var(--ligth-green),.2);
 }
+
+.item-button.active {
+    background-color: rgb(var(--ligth-green));
+}

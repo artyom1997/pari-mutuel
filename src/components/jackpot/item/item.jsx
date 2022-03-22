@@ -1,8 +1,15 @@
 import PropTypes from "prop-types";
 import "./item.css";
 import PriceButton from "../../price-button/priceButton";
+import reducerDispatch from "../../../reducerDispatch"
 
-function Item({ info }) {
+
+function Item({ info, gameInSlip, dispatch }) {
+  
+   function setDispatch(params){
+            reducerDispatch(params,gameInSlip,info,dispatch)
+    }
+
   return (
     <div className="item">
       <div className="item-colums item-info">
@@ -18,7 +25,18 @@ function Item({ info }) {
       </div>
       <div className="item-colums item-prices">
         {info.prices.map((el, i) => {
-          return <PriceButton className="price-button" info={el} key={i} />;
+          return (
+            <PriceButton
+              active={
+                gameInSlip[info.id] && gameInSlip[info.id].includes(el.name)
+                  ? true
+                  : false
+              }
+              info={el}
+              key={i}
+              setDispatch={setDispatch}
+            />
+          );
         })}
       </div>
     </div>
@@ -27,6 +45,8 @@ function Item({ info }) {
 
 Item.propTypes = {
   info: PropTypes.object,
+  gameInSlip: PropTypes.object,
+  dispatch: PropTypes.func,
 };
 
 Item.defaultProps = {
@@ -38,6 +58,8 @@ Item.defaultProps = {
     hour: "",
     prices: [],
   },
+  gameInSlip: {},
+  dispatch: function () {},
 };
 
 export default Item;
