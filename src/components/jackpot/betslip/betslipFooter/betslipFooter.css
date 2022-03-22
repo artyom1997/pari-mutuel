@@ -1,0 +1,19 @@
+.betslip-footer{
+    display: flex;
+    padding: 15px 20px;
+    background-color: #656b73;
+}
+
+.betslip-footer .betslip-button {
+   background-color: black ;
+}
+
+.betslip-bet {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.betslip-bet .betslip-button {
+    background-color: rgb(var(--ligth-green));
+    width: 100%;
+}

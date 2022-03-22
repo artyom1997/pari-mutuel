@@ -1,0 +1,21 @@
+.betslip-count {
+  padding: 5px 15px;
+  font-size: 18px;
+  background-color: #aab7d1;
+  margin-bottom: 5px;
+  color: rgb(var(--white));
+}
+
+.betslip-info_inner {
+  background-color: rgb(var(--white));
+  padding: 15px 17px;
+  font-size: 17px;
+  margin: 4px 0;
+}
+
+.betslip-combinations,
+.betslip-total_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
