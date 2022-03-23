@@ -36,6 +36,14 @@ export default function reducer(state, action) {
         newState[action.params[i].id] = [minPrice.name];
       }
       break;
+    case "quickPick":
+      for (let i = 0; i < action.params.length; i++) {
+        newState[action.params[i].id] = [
+          action.params[i].prices[Math.floor(Math.random() * 3)].name,
+        ];
+      }
+
+      break;
     default:
       newState = { ...state };
       break;
