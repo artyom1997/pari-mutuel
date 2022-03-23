@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./betslip.css";
 import BetslipControll from "./betslipControll/betslipControll";
 import BetslipFooter from "./betslipFooter/betslipFooter";
 import BetslipPanel from "./betslipPanel/betslipPanel";
 
-function Betslip() {
+function Betslip({gameInSlip,dispatch}) {
   return (
     <div className="betslip">
       <div className="betslip-header">
@@ -16,5 +17,15 @@ function Betslip() {
     </div>
   );
 }
+
+Betslip.propTypes = {
+  gameInSlip: PropTypes.object,
+  dispatch: PropTypes.func,
+};
+
+Betslip.defaultProps = {
+  gameInSlip: {},
+  dispatch: function () {},
+};
 
 export default React.memo(Betslip);

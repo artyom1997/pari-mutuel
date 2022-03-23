@@ -1,14 +1,12 @@
 import PropTypes from "prop-types";
 import "./item.css";
 import PriceButton from "../../price-button/priceButton";
-import reducerDispatch from "../../../reducerDispatch"
-
+import reducerDispatch from "../../../reducerDispatch";
 
 function Item({ info, gameInSlip, dispatch }) {
-  
-   function setDispatch(params){
-            reducerDispatch(params,gameInSlip,info,dispatch)
-    }
+  function setDispatch(params) {
+    reducerDispatch (params, gameInSlip, info, dispatch);
+  }
 
   return (
     <div className="item">

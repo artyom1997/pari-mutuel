@@ -19,7 +19,6 @@ function Main() {
       <div className="main-inner">
         {activeTab === "jackpot" ? (
           <Jackpot
-            className="jackpot"
             data={pageData}
             gameInSlip={gameInSlip}
             dispatch={dispatch}
@@ -27,7 +26,7 @@ function Main() {
         ) : activeTab === "results" ? (
           <Results />
         ) : null}
-        <Betslip />
+        <Betslip gameInSlip={gameInSlip} dispatch={dispatch} />
       </div>
     </div>
   );
