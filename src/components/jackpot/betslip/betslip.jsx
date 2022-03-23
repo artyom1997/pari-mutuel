@@ -5,12 +5,12 @@ import BetslipControll from "./betslipControll/betslipControll";
 import BetslipFooter from "./betslipFooter/betslipFooter";
 import BetslipPanel from "./betslipPanel/betslipPanel";
 
-function Betslip({gameInSlip,dispatch}) {
+function Betslip({ dispatch, pageData }) {
   return (
     <div className="betslip">
       <div className="betslip-header">
         <div className="betslip-title">Betslip</div>
-        <BetslipControll />
+        <BetslipControll dispatch={dispatch} pageData={pageData} />
       </div>
       <BetslipPanel />
       <BetslipFooter />
@@ -19,13 +19,13 @@ function Betslip({gameInSlip,dispatch}) {
 }
 
 Betslip.propTypes = {
-  gameInSlip: PropTypes.object,
   dispatch: PropTypes.func,
+  pageData: PropTypes.array,
 };
 
 Betslip.defaultProps = {
-  gameInSlip: {},
   dispatch: function () {},
+  pageData: [],
 };
 
 export default React.memo(Betslip);

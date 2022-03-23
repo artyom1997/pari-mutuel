@@ -5,7 +5,7 @@ import reducerDispatch from "../../../reducerDispatch";
 
 function Item({ info, gameInSlip, dispatch }) {
   function setDispatch(params) {
-    reducerDispatch (params, gameInSlip, info, dispatch);
+    reducerDispatch(params, gameInSlip, info, dispatch);
   }
 
   return (

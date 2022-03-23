@@ -22,8 +22,22 @@ export default function reducer(state, action) {
       newState = { ...state };
       delete newState[action.gameId];
       break;
+    case "favorites":
+      for (let i = 0; i < action.params.length; i++) {
+        let minPrice = {
+          name: action.params[i].prices[0].name,
+          rate: action.params[i].prices[0].rate,
+        };
+        for (let j = 0; j < action.params[i].prices.length; j++) {
+          if (minPrice.rate > action.params[i].prices[j].rate) {
+            minPrice = { ...action.params[i].prices[j] };
+          }
+        }
+        newState[action.params[i].id] = [minPrice.name];
+      }
+      break;
     default:
-        newState = {...state}
+      newState = { ...state };
       break;
   }
   return newState;

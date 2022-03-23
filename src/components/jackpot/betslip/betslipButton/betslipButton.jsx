@@ -1,22 +1,30 @@
 import React from "react";
 import "./betslipButton.css";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-
-
-function BetslipButton({ text, buttunFunc }) {
-  return <button className="betslip-button" onClick={buttunFunc}>{text}</button>;
+function BetslipButton({ text, buttunFunc, type }) {
+  return (
+    <button
+      className="betslip-button"
+      onClick={() => {
+        buttunFunc(type);
+      }}
+    >
+      {text}
+    </button>
+  );
 }
 
 BetslipButton.propTypes = {
+  type: PropTypes.string,
   text: PropTypes.string,
   buttunFunc: PropTypes.func,
 };
 
 BetslipButton.defaultProps = {
-    text:'',
-    buttunFunc:function() {
-    }
-}
+  type: "",
+  text: "",
+  buttunFunc: function () {},
+};
 
 export default BetslipButton;
