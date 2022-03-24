@@ -2,7 +2,10 @@ import PropTypes from "prop-types";
 import { memo } from "react";
 import "./betslipPanel.css";
 
-function BetslipPanel({ pageData, gameInSlip }) {
+function BetslipPanel({ gameInSlip }) {
+  let combinations = Object.values(gameInSlip).filter(el => el.length > 1).length + 1
+  let totalPrice = 100 * combinations
+
 
   return (
     <div className="betslip-panel">
@@ -12,11 +15,11 @@ function BetslipPanel({ pageData, gameInSlip }) {
         <div className="betslip-info_inner">
           <div className="betslip-combinations">
             <span>Combinations:</span>
-            <span>1</span>
+            <span>{combinations}</span>
           </div>
           <div className="betslip-total_price">
             <span>Total Price:</span>
-            <span>100</span>
+            <span>{totalPrice}</span>
           </div>
         </div>
       </div>
@@ -25,12 +28,10 @@ function BetslipPanel({ pageData, gameInSlip }) {
 }
 
 BetslipPanel.propTypes = {
-  pageData: PropTypes.array,
   gameInSlip: PropTypes.object,
 };
 
 BetslipPanel.defaultProps = {
-  pageData: [],
   gameInSlip: {},
 };
 

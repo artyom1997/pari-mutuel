@@ -12,7 +12,7 @@ function Betslip({ dispatch, pageData, gameInSlip }) {
         <div className="betslip-title">Betslip</div>
         <BetslipControll dispatch={dispatch} pageData={pageData} />
       </div>
-      <BetslipPanel pageData={pageData} gameInSlip={gameInSlip} />
+      <BetslipPanel gameInSlip={gameInSlip} />
       <BetslipFooter dispatch={dispatch} />
     </div>
   );
