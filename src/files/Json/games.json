@@ -103,5 +103,68 @@
                 "rate": "2.80"
             }
         ]
+    },
+    {
+        "id": 6,
+        "teams": "Altrincham V Aldershot Town",
+        "league": "England - National League",
+        "date": "26/03/2022",
+        "hour": "19:00",
+        "prices": [
+            {
+                "name": "1",
+                "rate": "2.05"
+            },
+            {
+                "name": "X",
+                "rate": "4.15"
+            },
+            {
+                "name": "2",
+                "rate": "1.80"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "teams": "Altrincham V Aldershot Town",
+        "league": "England - National League",
+        "date": "26/03/2022",
+        "hour": "19:00",
+        "prices": [
+            {
+                "name": "1",
+                "rate": "5.05"
+            },
+            {
+                "name": "X",
+                "rate": "4.02"
+            },
+            {
+                "name": "2",
+                "rate": "1.33"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "teams": "Altrincham V Aldershot Town",
+        "league": "England - National League",
+        "date": "26/03/2022",
+        "hour": "19:00",
+        "prices": [
+            {
+                "name": "1",
+                "rate": "1.95"
+            },
+            {
+                "name": "X",
+                "rate": "1.82"
+            },
+            {
+                "name": "2",
+                "rate": "2.33"
+            }
+        ]
     }
 ]

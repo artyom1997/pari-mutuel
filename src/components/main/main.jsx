@@ -26,7 +26,7 @@ function Main() {
         ) : activeTab === "results" ? (
           <Results />
         ) : null}
-        <Betslip dispatch={dispatch} pageData={pageData} />
+        <Betslip dispatch={dispatch} pageData={pageData} gameInSlip={gameInSlip} />
       </div>
     </div>
   );

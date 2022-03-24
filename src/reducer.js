@@ -42,8 +42,10 @@ export default function reducer(state, action) {
           action.params[i].prices[Math.floor(Math.random() * 3)].name,
         ];
       }
-
       break;
+    case "clear":
+      return newState;
+
     default:
       newState = { ...state };
       break;
